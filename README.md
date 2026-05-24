@@ -8,9 +8,7 @@ The core objective is to demonstrate how AI can be placed behind clinical safety
 
 Live deployment:
 
-```text
-https://med-guard-ai-coral.vercel.app/
-```
+- https://med-guard-ai-coral.vercel.app/
 
 ## Project Overview
 
