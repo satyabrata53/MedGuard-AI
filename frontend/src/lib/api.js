@@ -1,4 +1,8 @@
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+function normalizeApiBase(value) {
+  return (value || "http://localhost:8000").replace(/\/+$/, "").replace(/\/api$/i, "");
+}
+
+const API_BASE = normalizeApiBase(import.meta.env.VITE_API_BASE_URL);
 
 async function post(path, payload = {}) {
   const response = await fetch(`${API_BASE}${path}`, {
