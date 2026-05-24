@@ -6,6 +6,12 @@ MedGuard AI is a clinical drug safety platform designed around deterministic med
 
 The core objective is to demonstrate how AI can be placed behind clinical safety infrastructure instead of being allowed to independently reason about medication safety.
 
+Live deployment:
+
+```text
+https://med-guard-ai-coral.vercel.app/
+```
+
 ## Project Overview
 
 MedGuard AI validates patient-specific medication decisions through a deterministic backend before generating a clinician-facing response. A doctor can ask whether a medication is safe, request a full medication review, calculate clinical risk scores, or ask general patient-context questions. The backend classifies the query, resolves medication entities conservatively, executes deterministic safety engines, generates structured constraints, and then asks the configured LLM to explain the result within those constraints.
